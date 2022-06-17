@@ -1,0 +1,31 @@
+!Doctype <!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Layering</title>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.8.12/go.js"></script>
+
+     <script src="diagram.js"></script>
+
+</head>
+<body>
+
+     <!-- The DIV for a Diagram needs an explicit size or else we won't see anything.
+       In this case we also add a border to help see the edges. -->
+     <div id="myDiagramDiv" style="border: solid 1px blue; width:1000px; height:500px">
+     </div>
+     <script>
+          window.onload = function() {
+               diagram.initDiagram();
+          };
+     </script>
+     <p>Layer Visibility:</p>
+     
+     <label><input type="checkbox" name="AC" checked="checked" onclick="toggleVisible('AC',event)">AC</label>
+     <label><input type="checkbox" name="bulb" checked="checked" onclick="toggleVisible('bulb', event)">Bulb</label>
+     <label><input type="checkbox" name="Forelayer" checked="checked" onclick="toggleVisible('Foreground',event)">Foreground</label>
+</body>
+</html>

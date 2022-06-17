@@ -1,0 +1,11 @@
+{
+  "name": "layering",
+  "version": "1.0.0",
+  "description": "Layering implemntation using goJs",
+  "main": "diagram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aryan",
+  "license": "ISC"
+}
